@@ -47,8 +47,9 @@
   .hero { grid-template-columns: 1fr; gap: 10px; }
   .contact { text-align: left; }
   .info { grid-template-columns: 1fr 1fr; }
-  .info > div:nth-child(2) { border-right: 0; }
-  .info > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .info > div:nth-child(2n) { border-right: 0; }
+  .info > div:nth-child(-n+4) { border-bottom: 1px solid var(--line); }
+  .info > div:last-child { grid-column: 1 / -1; }
   table.career thead { display: none; }
   table.career, table.career tbody, table.career tr, table.career td { display: block; width: auto; }
   table.career tr { padding: 8px 0; border-bottom: 1px solid var(--line); }
